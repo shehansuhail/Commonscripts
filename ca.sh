@@ -38,8 +38,6 @@ echo " ╚═════╝ ╚═╝   ╚═╝      ╚═╝    ╚══�
 echo "                                                        ";
 
 echo ""
-echo -e $cyan"    Create by           $white":" $red Shihan Suhail  "
-echo -e $cyan"    Github              $white":" $red https://github.com/shehansuhail"
 echo -e $cyan ""
 echo -e $okegreen"   ====================== Tool Lest =======================    ";
         echo
@@ -163,7 +161,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;  
-            q)  echo -e $yellow " Thanks For Using My Tools Good Bye Shihan Suhail  !!"
+            q)  echo -e $yellow " Thanks For Using My Tools Good Bye !"
                 echo
                 exit 0 
                 ;;
