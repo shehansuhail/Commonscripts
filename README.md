@@ -8,8 +8,8 @@ A service in product A Production should not trust a service in product A Dev.
 
 ## Pre-requisites:                                                                                                
 
-Install openssl
-Install pwgen
+-Install openssl
+-Install pwgen
 
 
 ## Risks / Customer Impact                                                                                       
