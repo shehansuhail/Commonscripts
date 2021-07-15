@@ -2,8 +2,11 @@
 
 Since these are CAs for mTLS scenarios and building trust internally, separate CAs should be created for each environment.
 Main reason is a service in one deployment should not trust service in another deployment.
+
 For example:
+
 A service from product A should not trust a service from product B
+
 A service in product A Production should not trust a service in product A Dev. 
 
 ## How to Install the tool:
@@ -25,7 +28,6 @@ https://www.tecmint.com/install-openssl-from-source-in-centos-ubuntu/
 
 ### - Install pwgen
 
-MAC
 https://ubuntu.pkgs.org/18.04/ubuntu-universe-amd64/pwgen_2.08-1_amd64.deb.html
 
 ----------------------------------------------------------------------------------------------------------------------------
