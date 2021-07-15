@@ -5,7 +5,6 @@
 #                                     
 #                                                  
 #
-
 #Colors
 cyan='\e[0;36m'
 lightcyan='\e[96m'
@@ -38,25 +37,26 @@ echo " ╚═════╝ ╚═╝   ╚═╝      ╚═╝    ╚══�
 echo "                                                        ";
 
 echo ""
+
 echo -e $cyan ""
 echo -e $okegreen"   ====================== Tool Lest =======================    ";
         echo
         echo "[1] ✔ Passphrase Creation      "
-        echo "[2] ✔ Client CA Key Creation  "
-        echo "[3] ✔ Server Root CA Creation   "
-        echo "[4] ✔ Client CA Key Creation   "
+        echo "[2] ✔ Client Server Certificate Creation  "
+        echo "[3] ✔ Server Root Certificate Creation   "
+        echo "[4] ✔ Client Certificate Key Creation   "
         echo "[5] ✔ Client CSR Creation       "
-        echo "[6] ✔ Client CA Creation       "        
+        echo "[6] ✔ Client Certificate Creation       "        
         echo "[q] ✔ Quit"
         echo
         read -p "Select>: " option
         echo
         
         case "$option" in 
-            1)  echo "Passphrase creating"
+            1)  echo "Creating Passphrase"
                 echo -e $red "############## Passphrase Creation  ###################"
                 sleep 2
-                if [[ "$OSTYPE" == "linux-gnu" ]]; then
+                                if [[ "$OSTYPE" == "linux-gnu" ]]; then
                  	passphrase=$(pwgen -c -n -y -s  -1 35 | sed -E "s/\"|<|>|\`|'/$(($RANDOM % 9))/g")
                 elif [[ "$OSTYPE" == "darwin"* ]]; then
                 	passphrase=$(pwgen -c -n -y -s -B -1 35 -r "\"'\`<>")
@@ -69,7 +69,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;
-            2)  echo "Server CA Key Creation"
+            2)  echo "Creating Server Certificate Key"
                 echo -e $red "############## Server CA Key Creation  ###################"
                 sleep 2
                 #reading the input
@@ -83,7 +83,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;
-            3)  echo "Server Root CA Creation "
+            3)  echo "Creating Server Root Certificate"
                 echo -e $red "############## Server Root CA Creation ###################"
                 sleep 2
                #reading the input
@@ -101,7 +101,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;
-            4)  echo "Client CA Key Creation"
+            4)  echo "Creating Client Certificate Key"
                 echo -e $red "############## Client CA Key Creation ###################"
                 sleep 2
                 echo envname="Enter Environment shortname (EX, Stg. Prod, Dev)"
@@ -114,7 +114,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;
-            5)  echo "Client CSR Creation"
+            5)  echo "Creating Client CSR"
                 echo -e $red "############## CSR Creation ###################"
                 sleep 2
                 echo "Enter Client CA key name (EX, Created in step 4)"
@@ -138,7 +138,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;      
-            6)  echo "Client CA Creation"
+            6)  echo "Creating Client Certificate"
                 echo -e $red "############## Client CA Creation ###################"
                 sleep 2
                 echo "Enter Client CSR Name (EX, Created in step 5)"
@@ -161,7 +161,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 read -p "pess any key to return ..."
                 clear
                 ;;  
-            q)  echo -e $yellow " Thanks For Using My Tools Good Bye !"
+            q)  echo -e $yellow " Thanks For Using My Tools Good Bye !!"
                 echo
                 exit 0 
                 ;;
