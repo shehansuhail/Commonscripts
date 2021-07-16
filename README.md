@@ -1,13 +1,12 @@
 ## Summary:                                                                                                       
 
-Since these are CAs for mTLS scenarios and building trust internally, separate CAs should be created for each environment.
-Main reason is a service in one deployment should not trust service in another deployment.
-
+Since these are CAs for mTLS scenarios and building trust internally, separate CAs should be created for each environment. Main reason is that a service in one deployment should not trust a service in another deployment.
 For example:
 
 A service from product A should not trust a service from product B
 
-A service in product A Production should not trust a service in product A Dev. 
+A service in product A Production should not trust a service in product A Dev.
+
 
 ## How to Install the tool:
 ---------------------------------------------------------------------------------------------------------------------------
