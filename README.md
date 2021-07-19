@@ -27,7 +27,8 @@ https://www.tecmint.com/install-openssl-from-source-in-centos-ubuntu/
 
 ### - Install pwgen
 
-https://ubuntu.pkgs.org/18.04/ubuntu-universe-amd64/pwgen_2.08-1_amd64.deb.html
+- Linux https://ubuntu.pkgs.org/18.04/ubuntu-universe-amd64/pwgen_2.08-1_amd64.deb.html
+- MAC   https://brewinstall.org/install-pwgen-on-mac-with-brew/
 
 ----------------------------------------------------------------------------------------------------------------------------
 
