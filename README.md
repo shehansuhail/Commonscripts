@@ -23,8 +23,9 @@ A service in product A Production should not trust a service in product A Dev.
 ## Pre-requisites 
 
 ### - Install openssl  
-Linux - https://www.tecmint.com/install-openssl-from-source-in-centos-ubuntu/
-MAC   - https://yasar-yy.medium.com/installing-openssl-library-on-macos-catalina-6777a2e238a6
+-Linux - https://www.tecmint.com/install-openssl-from-source-in-centos-ubuntu/
+
+-MAC   - https://yasar-yy.medium.com/installing-openssl-library-on-macos-catalina-6777a2e238a6
 
 ### - Install pwgen
 
