@@ -154,7 +154,7 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 echo "Enter Certificate valid date count"
                 read validdatecount
                 echo Creating orgsync.$envname.$product.$envname.crt
-                     Clientcsr=$(openssl x509 -req -in $clientcsrname -CA $rootCacertname -CAkey $rootcakeyname -CAcreateserial -out orgsync.$envname.$product.$envname.crt -days 500 -sha256)                   
+                     Clientcsr=$(openssl x509 -req -in $clientcsrname -CA $rootCacertname -CAkey $rootcakeyname -CAcreateserial -out orgsync.$envname.$product.$envname.crt -days $validdatecount -sha256)                   
                 echo -e $green "Client cert. Created successfully"
                 echo
                 echo -e $green "【!】Return To The Main Menu【!】"
