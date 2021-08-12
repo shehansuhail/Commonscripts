@@ -106,8 +106,10 @@ echo -e $okegreen"   ====================== Tool Lest =======================   
                 sleep 2
                 echo envname="Enter Environment shortname (EX, Stg. Prod, Dev)"
                 read envname
+                echo "Enter Name of the product (Ex: Choreo, Asgardio, Clevercare)"
+                read product
                 echo Creating ClientCa $envname.key
-                      rootcakey=$(openssl genrsa -out orgsync.$envname.choreo.$envname.key 2048)
+                      rootcakey=$(openssl genrsa -out orgsync.$envname.$product.$envname.key 2048)
                 echo -e $green "Key Created successfully"
                 echo
                 echo -e $green "【!】Return To The Main Menu【!】"
